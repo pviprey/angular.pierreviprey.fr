@@ -1,1 +1,29 @@
-/* You can add global styles to this file, and also import other style files */
+body{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    
+    aside{
+        position: relative;
+        width: 56.25vh;
+        height: 100%;
+
+        background-color: darkred;
+
+        h1,h2{
+            position: relative;
+
+            color: rgb(255, 249, 249);
+
+            text-align: center;
+        }
+    }
+
+    app-root{
+        position: relative;
+
+        background-color: whitesmoke;
+    }
+}
