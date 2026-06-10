@@ -11,6 +11,7 @@
   "include": [
     "src/**/*.spec.ts",
     "src/**/*.d.ts"
+<<<<<<< HEAD
   ],
   "angularCompilerOptions": {
     "extendedDiagnostics": {
@@ -20,4 +21,7 @@
       }
     }
   }
+=======
+  ]
+>>>>>>> 992da68 (initial commit)
 }
