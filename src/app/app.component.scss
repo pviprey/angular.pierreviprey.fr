@@ -7,7 +7,8 @@ aside{
     flex-direction: column;
     justify-content: space-between;
 
-    padding: 2%;
+    padding: 10px;
+    box-sizing: border-box;
 
     background-color: #6d6767;
 
@@ -34,13 +35,8 @@ aside{
         grid-template-columns: repeat(3, 33%);
         grid-template-rows: repeat(3, auto);
         
-        row-gap: 5%;
+        row-gap: 4dvh;
 
-        *{
-            aspect-ratio: 1/ 1;
-            object-fit: contain;
-            width: 100%;
-        }
 
         div.profilPicture{
             position: relative;
