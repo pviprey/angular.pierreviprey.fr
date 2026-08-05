@@ -9,13 +9,10 @@ aside{
 
     padding: 2%;
 
-    background-color: #106aa2;
+    background-color: #6d6767;
 
     h1,h2{
         position: relative;
-
-        color: rgb(255, 249, 249);
-
         text-align: center;
     }
 
@@ -39,12 +36,22 @@ aside{
         
         row-gap: 5%;
 
+        *{
+            aspect-ratio: 1/ 1;
+            object-fit: contain;
+            width: 100%;
+        }
 
         div.profilPicture{
             position: relative;
 
             grid-column: 2;
             grid-row: 2;
+
+            mask-image: url('/Mask-target.svg');
+            mask-repeat: no-repeat;
+            mask-position: center;
+            mask-size: contain;
 
             img{
                 position: relative;
