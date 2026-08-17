@@ -12,7 +12,7 @@
     <app-grading [title]="'Soft Skills'"></app-grading>
     <app-grading [title]="'Testing'"></app-grading>
     <app-grading [title]="'Operating System'"></app-grading>
-    <app-grading [title]="'Languages'"></app-grading>
+    <app-grading [title]="'Languages'" [svgs]="language"></app-grading>
     <app-grading [title]="'DevOps'"></app-grading>
     <div class="profilPicture">
       <img src="/profilPicture.jpeg" alt="Profil Picture">
@@ -21,3 +21,4 @@
 
   <app-contacts></app-contacts>
 </aside>
+<router-outlet></router-outlet>

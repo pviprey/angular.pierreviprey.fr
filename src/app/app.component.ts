@@ -12,4 +12,19 @@ import { Contacts } from './contacts/contacts';
 })
 export class AppComponent {
   title = 'angular.pierreviprey.fr';
+
+  backend: { [key: string]: { path: string, grade: number } } = {};
+  frontend: { [key: string]: { path: string, grade: number } } = {};
+  database: { [key: string]: { path: string, grade: number } } = {};
+  softSkills: { [key: string]: { path: string, grade: number } } = {};
+  testing: { [key: string]: { path: string, grade: number } } = {};
+  operatingSystem: { [key: string]: { path: string, grade: number } } = {};
+  language: { [key: string]: { path: string, grade: number } } = {
+    'fr': { path: '/Flag_of_France.svg', grade: 10 },
+    'en': { path: '/Flag_of_the_United_Kingdom.svg', grade: 9 },
+    'de': { path: '/Flag_of_Germany.svg', grade: 2 },
+  };
+  
+
+
 }

@@ -1,7 +1,15 @@
-img{
+div.target{
+    position: relative;
+    background-image: url('/Target.svg');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
     aspect-ratio: 1/ 1;
-    object-fit: contain;
-    width: 100%;
+    transform-origin: center;
+
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
 
     &:hover{
         cursor: pointer;
@@ -22,6 +30,10 @@ img{
 }
 
 h3{
-    position: relative;
     display: none;
+}
+
+img.icon{
+    position: absolute;
+    width: 18%;
 }
