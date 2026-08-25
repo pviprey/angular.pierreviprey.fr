@@ -16,4 +16,13 @@ export class Contacts {
       console.error('Failed to copy email:', error);
     });
   }
+
+  callMe() {
+    const phoneNumber = '+33629764894';
+    navigator.clipboard.writeText(phoneNumber).then(() => {
+      console.log('Phone number copied to clipboard:', phoneNumber);
+    }).catch((error) => {
+      console.error('Failed to copy phone number:', error);
+    });
+  }
 }

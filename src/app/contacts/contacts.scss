@@ -12,6 +12,10 @@ div{
     img{
         width: 100%;
         height: 100%;
+        
+        &:hover {
+            cursor: pointer;
+        }
     }
 
     > a, > img{
@@ -19,5 +23,22 @@ div{
         height: auto;
 
         object-fit: cover;
+
+        &.github{
+            background-image: url(/github.svg);
+        }
+
+        &.linkedin{
+            background-image: url(/linkedIn.svg);
+            background-size: contain;
+        }
+
+        &#pdf{
+            background-image: url(/Icon_of_CV.svg);
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
     }
+
+
 }

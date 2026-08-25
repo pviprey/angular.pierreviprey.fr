@@ -128,10 +128,6 @@ export class Grading implements AfterViewInit, OnDestroy {
   }
 
   private setCoordinates(grade: number, index: number, total: number): { x: number; y: number } {
-    if (grade === 10) {
-      return { x: 0, y: 0 };
-    }
-
     const radius = 45 * (10 - grade) / 10;
     const angle = (index / total) * 2 * Math.PI;
 
