@@ -1,20 +1,22 @@
-div.target{
+div.target {
     position: relative;
+
     background-image: url('/Target.svg');
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
-    aspect-ratio: 1/ 1;
-    transform-origin: center;
 
-    top:50%;
-    left:50%;
+    aspect-ratio: 1 / 1;
+
+    top: 50%;
+    left: 50%;
+
     transform: translate(-50%, -50%);
 
-    &:hover{
+    &:hover {
         cursor: pointer;
 
-        & + h3{
+        & + h3 {
             position: absolute;
             display: block;
 
@@ -24,16 +26,77 @@ div.target{
 
             margin-bottom: 10px;
             padding: 5px 10px;
+
             white-space: nowrap;
         }
     }
 }
 
-h3{
+h3 {
     display: none;
 }
 
-img.icon{
+img.icon {
     position: absolute;
     width: 18%;
+    border-radius: 5px;
+
+    --x-offset: 0px;
+    --y-offset: 0px;
+
+    transform: translate(
+        calc(-50% + var(--x-offset)),
+        calc(-50% + var(--y-offset))
+    );
+
+    animation-name: random-float;
+    animation-duration: var(--float-duration);
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-delay: var(--float-delay);
+}
+
+@keyframes random-float {
+    0% {
+        transform: translate(
+            calc(-50% - var(--float-x)),
+            calc(-50% - var(--float-y))
+        );
+    }
+
+    20% {
+        transform: translate(
+            calc(-50% + var(--float-x) * 0.3),
+            calc(-50% - var(--float-y) * 0.7)
+        );
+    }
+
+    40% {
+        transform: translate(
+            calc(-50% + var(--float-x) * 0.8),
+            calc(-50% + var(--float-y) * 0.1)
+        );
+    }
+
+    60% {
+        transform: translate(
+            calc(-50% - var(--float-x) * 0.2),
+            calc(-50% + var(--float-y))
+        );
+    }
+
+    80% {
+        transform: translate(
+            calc(-50% - var(--float-x) * 0.8),
+            calc(-50% + var(--float-y) * 0.3)
+        );
+    }
+
+    100% {
+        transform: translate(
+            calc(-50% + var(--float-x)),
+            calc(-50% - var(--float-y) * 0.2)
+        );
+    }
 }
