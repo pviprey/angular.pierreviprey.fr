@@ -127,26 +127,15 @@ export class Grading implements AfterViewInit, OnDestroy {
     this._svgs.set(updated);
   }
 
-  private setCoordinates(
-    grade: number,
-    index: number,
-    total: number
-  ): { x: number; y: number } {
+  private setCoordinates(grade: number, index: number, total: number): { x: number; y: number } {
     if (grade === 10) {
       return { x: 0, y: 0 };
     }
 
     const radius = 45 * (10 - grade) / 10;
+    const angle = (index / total) * 2 * Math.PI;
 
-    const angle =
-      (index / total) *
-      2 *
-      (Math.random() * 2 - 1);
-
-    return {
-      x: radius * Math.cos(angle),
-      y: radius * Math.sin(angle)
-    };
+    return { x: radius * Math.cos(angle), y: radius * Math.sin(angle)};
   }
 
   private createFloatAnimation() {
@@ -158,18 +147,10 @@ export class Grading implements AfterViewInit, OnDestroy {
       0
     );
 
-    return {
-      floatX,
-      floatY,
-      floatDuration,
-      floatDelay
-    };
+    return {floatX, floatY, floatDuration, floatDelay};
   }
 
-  private randomFloat(
-    min: number,
-    max: number
-  ): number {
+  private randomFloat(min: number, max: number): number {
     return min + Math.random() * (max - min);
   }
 }
