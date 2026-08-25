@@ -142,10 +142,7 @@ export class Grading implements AfterViewInit, OnDestroy {
     const floatX = this.randomFloat(1.5, 5);
     const floatY = this.randomFloat(1.5, 5);
     const floatDuration = this.randomFloat(3.5, 7);
-    const floatDelay = this.randomFloat(
-      -floatDuration,
-      0
-    );
+    const floatDelay = this.randomFloat(-floatDuration, 0);
 
     return {floatX, floatY, floatDuration, floatDelay};
   }

@@ -16,6 +16,7 @@ export class AppComponent {
   backend: { [key: string]: { path: string, grade: number } } = {
     'java': { path: '/java.svg', grade: 8 },
     'springBoot': { path: '/springboot.svg', grade: 6 },
+    'nodejs': { path: '/nodejs.svg', grade: 8 },
   };
   frontend: { [key: string]: { path: string, grade: number } } = {
     'html': { path: '/html5.svg', grade: 8 },
