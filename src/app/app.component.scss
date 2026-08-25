@@ -32,11 +32,9 @@ aside{
         height: auto;
 
         display: grid;
-        grid-template-columns: repeat(3, 33%);
+        grid-template-columns: repeat(3, calc(100% / 3));
         grid-template-rows: repeat(3, auto);
-        
         row-gap: 4dvh;
-
 
         div.profilPicture{
             position: relative;

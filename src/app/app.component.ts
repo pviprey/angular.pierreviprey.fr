@@ -28,6 +28,7 @@ export class AppComponent {
   };
   database: { [key: string]: { path: string, grade: number } } = {
     'SQL': { path: '/sql.svg', grade: 8 },
+    'NoSQL': { path: '/nosql.svg', grade: 1 },
   };
   softSkills: { [key: string]: { path: string, grade: number } } = {
     'Teamwork': { path: '/teamwork.svg', grade: 9 },
