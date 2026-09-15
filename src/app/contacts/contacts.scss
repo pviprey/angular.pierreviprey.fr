@@ -26,16 +26,16 @@ div{
         object-fit: cover;
 
         &.github{
-            background-image: url(../../../public/github.svg);
+            background-image: url(/github.svg);
         }
 
         &.linkedin{
-            background-image: url(../../../public/linkedIn.svg);
+            background-image: url(/linkedIn.svg);
             background-size: contain;
         }
 
         &#pdf{
-            background-image: url(../../../public/Icon_of_CV.svg);
+            background-image: url(/Icon_of_CV.svg);
             background-size: contain;
             background-repeat: no-repeat;
         }
