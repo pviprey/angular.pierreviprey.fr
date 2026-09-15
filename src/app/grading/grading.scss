@@ -6,6 +6,7 @@ div.target {
     background-position: center;
     background-repeat: no-repeat;
 
+    width: 95%;
     aspect-ratio: 1 / 1;
 
     top: 50%;
@@ -36,27 +37,77 @@ h3 {
     display: none;
 }
 
-img.icon {
+.container {
     position: absolute;
-    width: 18%;
+
     border-radius: 5px;
 
-    background-color: #f3f8ffa0;
+    transform: translate(-50%, -50%);
 
-    --x-offset: 0px;
-    --y-offset: 0px;
+    animation:
+        random-float
+        var(--float-duration)
+        ease-in-out
+        var(--float-delay)
+        infinite
+        alternate;
 
-    transform: translate(
-        calc(-50% + var(--x-offset)),
-        calc(-50% + var(--y-offset))
-    );
+    &.best {
+        padding: 3px;
 
-    animation-name: random-float;
-    animation-duration: var(--float-duration);
-    animation-timing-function: ease-in-out;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-    animation-delay: var(--float-delay);
+        background:
+            linear-gradient(
+                120deg,
+                #BF953F 0%,
+                #FCF6BA 20%,
+                #B38728 40%,
+                #FBF5B7 60%,
+                #AA771C 80%,
+                #FCF6BA 100%
+            );
+
+        background-size: 300% 300%;
+
+        animation:
+            random-float
+            var(--float-duration)
+            ease-in-out
+            var(--float-delay)
+            infinite
+            alternate,
+            gold-shine
+            var(--float-duration)
+            ease-in-out
+            var(--float-delay)
+            infinite
+            alternate;
+    }
+
+    > .element {
+        height: auto;
+
+        border-radius: 5px;
+        padding: 4px 2px;
+        background-color: #f3f8ffa0;
+    }
+
+    > .word {
+        max-width: 6dvh;
+
+        text-align: center;
+        text-overflow: ellipsis;
+        overflow: hidden;
+    }
+
+    > .flag {
+        width: 4dvh;
+        padding: 0;
+        background-color: none;
+    }
+
+    > .icon {
+        width: 3dvh;
+    }
 }
 
 @keyframes random-float {
@@ -100,5 +151,31 @@ img.icon {
             calc(-50% + var(--float-x)),
             calc(-50% - var(--float-y) * 0.2)
         );
+    }
+}
+
+@keyframes gold-shine {
+    0% {
+        background-position: 0% 0%;
+    }
+
+    20% {
+        background-position: 30% 70%;
+    }
+
+    40% {
+        background-position: 80% 10%;
+    }
+
+    60% {
+        background-position: 20% 100%;
+    }
+
+    80% {
+        background-position: 90% 30%;
+    }
+
+    100% {
+        background-position: 50% 80%;
     }
 }

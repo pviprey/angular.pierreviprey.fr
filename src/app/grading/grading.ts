@@ -1,5 +1,6 @@
 import {AfterViewInit, Component, Input, OnDestroy, signal} from '@angular/core';
 import { KeyValuePipe } from '@angular/common';
+import { SkillWithCoordinates } from '../models/skill';
 
 @Component({
   selector: 'app-grading',
@@ -13,42 +14,22 @@ export class Grading implements AfterViewInit, OnDestroy {
 
   @Input()
   set svgs(value: {
-    [key: string]: {
-      path: string;
-      grade: number;
-      x?: number;
-      y?: number;
-      z?: number;
-      floatX?: number;
-      floatY?: number;
-      floatDuration?: number;
-      floatDelay?: number;
-    };
+    [key: string]: SkillWithCoordinates;
   }) {
-    this._svgs.set(value);
+    this.icon.set(value);
   }
 
-  private readonly _svgs = signal<{
-    [key: string]: {
-      path: string;
-      grade: number;
-      x?: number;
-      y?: number;
-      z?: number;
-      floatX?: number;
-      floatY?: number;
-      floatDuration?: number;
-      floatDelay?: number;
-    };
+  private readonly icon = signal<{
+    [key: string]: SkillWithCoordinates;
   }>({});
 
-  readonly svgsSignal = this._svgs.asReadonly();
+  readonly svgsSignal = this.icon.asReadonly();
 
   private zIndexAnimationId?: number;
   private currentIndex = 0;
 
   ngOnInit() {
-    const svgs = this._svgs();
+    const svgs = this.icon();
 
     const keys = Object.keys(svgs);
     const total = keys.length;
@@ -73,7 +54,7 @@ export class Grading implements AfterViewInit, OnDestroy {
       })
     );
 
-    this._svgs.set(initialized);
+    this.icon.set(initialized);
   }
 
   ngAfterViewInit() {
@@ -87,7 +68,7 @@ export class Grading implements AfterViewInit, OnDestroy {
   }
 
   private startZIndexAnimation() {
-    const keys = Object.keys(this._svgs());
+    const keys = Object.keys(this.icon());
 
     if (keys.length <= 1) {
       return;
@@ -106,7 +87,7 @@ export class Grading implements AfterViewInit, OnDestroy {
   }
 
   private updateZIndexes(keys: string[]) {
-    const current = this._svgs();
+    const current = this.icon();
     const total = keys.length;
 
     const updated = Object.fromEntries(
@@ -124,11 +105,11 @@ export class Grading implements AfterViewInit, OnDestroy {
       })
     );
 
-    this._svgs.set(updated);
+    this.icon.set(updated);
   }
 
   private setCoordinates(grade: number, index: number, total: number): { x: number; y: number } {
-    const radius = 45 * (10 - grade) / 10;
+    const radius = 42 * (grade) / 10;
     const angle = (index / total) * 2 * Math.PI;
 
     return { x: radius * Math.cos(angle), y: radius * Math.sin(angle)};
@@ -139,8 +120,9 @@ export class Grading implements AfterViewInit, OnDestroy {
     const floatY = this.randomFloat(1.5, 5);
     const floatDuration = this.randomFloat(3.5, 7);
     const floatDelay = this.randomFloat(-floatDuration, 0);
+    const shineDuration = this.randomFloat(3, 6);
 
-    return {floatX, floatY, floatDuration, floatDelay};
+    return {floatX, floatY, floatDuration, floatDelay, shineDuration};
   }
 
   private randomFloat(min: number, max: number): number {

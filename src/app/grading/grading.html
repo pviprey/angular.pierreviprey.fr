@@ -1,9 +1,8 @@
 <div #targetContainer class="target">
   @for (item of svgsSignal() | keyvalue; track item.key) {
-    <img
-      class="icon"
-      [src]="item.value.path"
-      [alt]="item.key"
+    <div
+      class="container"
+      [class.best]="(item.value.grade >= 8)"
 
       [style.left.%]="50 + (item.value.x ?? 0)"
       [style.top.%]="50 + (item.value.y ?? 0)"
@@ -13,7 +12,25 @@
       [style.--float-y]="item.value.floatY + 'px'"
       [style.--float-duration]="item.value.floatDuration + 's'"
       [style.--float-delay]="item.value.floatDelay + 's'"
+      [style.--shine-duration]="item.value.shineDuration + 's'"
+
     >
+    @if (item.value.type === 'word') {
+      <p
+        [class]="['element', item.value.type]"
+      >
+        {{ item.value.data }}
+    </p>
+      
+    }@else{
+      <img
+        [class]="['element', item.value.type]"
+
+        [src]="item.value.data"
+        [alt]="item.key"
+      >
+    }
+    </div>
   }
 </div>
 

@@ -34,7 +34,7 @@ aside{
         display: grid;
         grid-template-columns: repeat(3, calc(100% / 3));
         grid-template-rows: repeat(3, auto);
-        row-gap: 4dvh;
+        row-gap: 3dvh;
 
         div.profilPicture{
             position: relative;
