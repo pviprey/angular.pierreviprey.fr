@@ -38,7 +38,6 @@
           },
           "configurations": {
             "production": {
-              "baseHref": "/angular.pierreviprey.fr/",
               "optimization": true,
               "budgets": [
                 {
@@ -99,10 +98,7 @@
           }
         },
         "deploy": {
-          "builder": "angular-cli-ghpages:deploy",
-          "options": {
-            "baseHref": "/angular.pierreviprey.fr/"
-          }
+          "builder": "angular-cli-ghpages:deploy"
         }
       }
     }
