@@ -17,7 +17,7 @@ export class AppComponent {
   backend: { [key: string]: Skill } = {
     'java': {type: 'icon', data: '/java.svg', grade: 8 },
     'springBoot': {type: 'icon', data: '/springboot.svg', grade: 6 },
-    'nodejs': {type: 'icon', data: '/nodejs.svg', grade: 8 },
+    'nodejs': {type: 'icon', data: '/nodejs.svg', grade: 7 },
   };
   frontend: { [key: string]: Skill } = {
     'html': {type: 'icon', data: '/html5.svg', grade: 8 },
@@ -25,7 +25,7 @@ export class AppComponent {
     'sass': {type: 'icon', data: '/sass.svg', grade: 7 },
     'typescript': {type: 'icon', data: '/typescript.svg', grade: 7 },
     'angular': {type: 'icon', data: '/angular.svg', grade: 7 },
-    'ngrx': {type: 'icon', data: '/ngrx.svg', grade: 4 },
+    'ngrx': {type: 'icon', data: '/ngrx.svg', grade: 5 },
   };
   database: { [key: string]: Skill } = {
     'SQL': { type: 'icon', data: '/sql.svg', grade: 8 },
@@ -33,14 +33,14 @@ export class AppComponent {
   };
   softSkills: { [key: string]: Skill } = {
     'Teamwork': { type: 'word', data: 'Teamwork', grade: 8 },
-    'Autonomy': { type: 'word', data: 'Autonomy', grade: 10 },
+    'Autonomy': { type: 'word', data: 'Autonomy', grade: 9 },
     'Communication': { type: 'word', data: 'Communication', grade: 6 },
     'Adaptability': { type: 'word', data: 'Adaptability', grade: 7 },
   };
   practice: { [key: string]: Skill } = {
     'TDD': { type: 'word', data: 'TDD', grade: 6 },
     'Agile': { type: 'word', data: 'Agile', grade: 8 },
-    'Unit Testing': { type: 'word', data: 'Unit Testing', grade: 9 },
+    'Unit Testing': { type: 'word', data: 'Unit Testing', grade: 8 },
   };
   operatingSystem: { [key: string]: Skill } = {
     'linux': { type: 'icon', data: '/linux.svg', grade: 8 },
