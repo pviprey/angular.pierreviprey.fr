@@ -1,6 +1,6 @@
 aside{
     position: relative;
-    width: 56.25vh;
+    max-width: 56.25vh;
     height: 100%;
 
     display: flex;
@@ -15,14 +15,6 @@ aside{
     h1,h2{
         position: relative;
         text-align: center;
-    }
-
-    h1{
-        font-size: 2.5rem;
-    }
-
-    h2{
-        font-size: 1.5rem;
     }
 
     .grid{
