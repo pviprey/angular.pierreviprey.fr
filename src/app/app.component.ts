@@ -44,7 +44,8 @@ export class AppComponent {
   };
   operatingSystem: { [key: string]: Skill } = {
     'linux': { type: 'icon', data: '/linux.svg', grade: 8 },
-    'Windows': { type: 'icon', data: '/windows.svg', grade: 8 },
+    'Windows': { type: 'icon', data: '/windows.svg', grade: 7 },
+    'MacOS': { type: 'icon', data: '/macos.svg', grade: 1 },
   };
   language: { [key: string]: Skill } = {
     'fr': { type: 'flag', data: '/Flag_of_France.svg', grade: 10 },
