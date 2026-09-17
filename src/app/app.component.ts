@@ -22,7 +22,7 @@ export class AppComponent {
   frontend: { [key: string]: Skill } = {
     'html': {type: 'icon', data: '/html5.svg', grade: 8 },
     'react': {type: 'icon', data: '/react.svg', grade: 2 },
-    'sass': {type: 'icon', data: '/sass.svg', grade: 7 },
+    'sass': {type: 'icon', data: '/sass.svg', grade: 8 },
     'typescript': {type: 'icon', data: '/typescript.svg', grade: 7 },
     'angular': {type: 'icon', data: '/angular.svg', grade: 7 },
     'ngrx': {type: 'icon', data: '/ngrx.svg', grade: 5 },
@@ -37,6 +37,11 @@ export class AppComponent {
     'Communication': { type: 'word', data: 'Communication', grade: 6 },
     'Adaptability': { type: 'word', data: 'Adaptability', grade: 7 },
   };
+  language: { [key: string]: Skill } = {
+    'fr': { type: 'flag', data: '/Flag_of_France.svg', grade: 10 },
+    'en': { type: 'flag', data: '/Flag_of_the_United_Kingdom.svg', grade: 9 },
+    'de': { type: 'flag', data: '/Flag_of_Germany.svg', grade: 2 },
+  };
   practice: { [key: string]: Skill } = {
     'TDD': { type: 'word', data: 'TDD', grade: 6 },
     'Agile': { type: 'word', data: 'Agile', grade: 8 },
@@ -46,11 +51,6 @@ export class AppComponent {
     'linux': { type: 'icon', data: '/linux.svg', grade: 8 },
     'Windows': { type: 'icon', data: '/windows.svg', grade: 7 },
     'MacOS': { type: 'icon', data: '/macos.svg', grade: 1 },
-  };
-  language: { [key: string]: Skill } = {
-    'fr': { type: 'flag', data: '/Flag_of_France.svg', grade: 10 },
-    'en': { type: 'flag', data: '/Flag_of_the_United_Kingdom.svg', grade: 9 },
-    'de': { type: 'flag', data: '/Flag_of_Germany.svg', grade: 2 },
   };
   devOps: { [key: string]: Skill } = {
     'git': { type: 'icon', data: '/git.svg', grade: 8 },

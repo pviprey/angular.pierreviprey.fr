@@ -17,7 +17,7 @@ div.target {
     &:hover {
         cursor: pointer;
 
-        & + h3 {
+        & + h2 {
             position: absolute;
             display: block;
 
@@ -33,7 +33,7 @@ div.target {
     }
 }
 
-h3 {
+h2 {
     display: none;
 }
 
@@ -51,6 +51,32 @@ h3 {
         var(--float-delay)
         infinite
         alternate;
+
+    &:hover{
+        animation:
+            random-float
+            var(--float-duration)
+            ease-in-out
+            var(--float-delay)
+            infinite
+            alternate;
+
+            &.best {
+                animation:
+                    random-float
+                    var(--float-duration)
+                    ease-in-out
+                    var(--float-delay)
+                    infinite
+                    alternate,
+                    gold-shine
+                    var(--float-duration)
+                    ease-in-out
+                    var(--float-delay)
+                    infinite
+                    alternate;
+            }
+    }
 
     &.best {
         padding: 0.3dvh;
@@ -92,7 +118,7 @@ h3 {
     }
 
     > .word {
-        max-width: 6dvh;
+        max-width: 7dvh;
 
         text-align: center;
         text-overflow: ellipsis;
