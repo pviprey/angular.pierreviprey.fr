@@ -3,6 +3,7 @@
     <div
       class="container"
       [class.best]="(item.value.grade >= 8)"
+      [class.onTop]="item.value.active"
 
       [style.left.%]="50 + (item.value.x ?? 0)"
       [style.top.%]="50 + (item.value.y ?? 0)"

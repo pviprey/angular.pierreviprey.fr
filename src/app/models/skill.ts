@@ -8,6 +8,7 @@ export interface SkillWithCoordinates extends Skill {
     x?: number;
     y?: number;
     z?: number;
+    active?: boolean;
     floatX?: number;
     floatY?: number;
     floatDuration?: number;

@@ -48,6 +48,7 @@ export class Grading implements AfterViewInit, OnDestroy {
               total
             ),
             z: 0,
+            active: false,
             ...this.createFloatAnimation()
           }
         ];
@@ -95,11 +96,14 @@ export class Grading implements AfterViewInit, OnDestroy {
         const distance =
           (index - this.currentIndex + total) % total;
 
+        const z = total - distance;
+
         return [
           key,
           {
             ...current[key],
-            z: total - distance
+            z,
+            active: z === total
           }
         ];
       })
