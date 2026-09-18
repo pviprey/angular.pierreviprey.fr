@@ -110,6 +110,7 @@ h2 {
     }
 
     > .element {
+        display: block;
         height: auto;
 
         border-radius: 5px;
@@ -134,7 +135,7 @@ h2 {
     > .flag {
         width: 3.8dvh;
         padding: 0;
-        background-color: none;
+        background-color: transparent;
     }
 
     > .icon {
