@@ -62,22 +62,40 @@ body{
     }
 }
 
+@font-face {
+	font-family: 'Inter';
+	src: url('/fonts/Inter/Inter-VariableFont_opsz,wght.ttf') format('truetype-variations');
+	font-optical-sizing: auto;
+	font-variation-settings: "opsz" 36;
+
+}
+@font-face {
+	font-family: 'Poppins';
+	src: url('/fonts/Poppins/Poppins-Black.ttf') format('truetype');
+}
+
+
 h1,h2,h3{
+	font-family: 'Poppins';
 	color: rgb(255, 249, 249);
 }
 
 h1{
+	font-weight: 400;
 	font-size: 5dvh;
 	padding-bottom: 1dvh;
 }
 h2{
+	font-weight: 300;
 	font-size: 3dvh;
 }
 h3{
+	font-weight: 300;
 	font-size: 2dvh;
 }
 
 p{
+	font-family: 'Inter';
 	font-size: 1.6dvh;
 }
 
