@@ -43,6 +43,7 @@ h2 {
     border-radius: 5px;
 
     transform: translate(-50%, -50%);
+    user-select: none;
 
     animation:
         random-float
