@@ -1,0 +1,55 @@
+aside{
+    position: relative;
+    max-width: 56.25vh;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    padding: 10px;
+    box-sizing: border-box;
+
+    background-color: #6d6767;
+
+    h1,h2{
+        position: relative;
+        text-align: center;
+    }
+
+    .grid{
+        position: relative;
+
+        width: 100%;
+        height: auto;
+
+        display: grid;
+        grid-template-columns: repeat(3, calc(100% / 3));
+        grid-template-rows: repeat(3, auto);
+        row-gap: 3dvh;
+
+        div.profilPicture{
+            position: relative;
+
+            grid-column: 2;
+            grid-row: 2;
+
+            mask-image: url('/icons/Mask-target.svg');
+            mask-repeat: no-repeat;
+            mask-position: center;
+            mask-size: contain;
+
+            img{
+                position: relative;
+
+                margin: 0;
+                border-radius: 5px;
+
+                width: 100%;
+                height: 100%;
+
+                object-fit: cover;
+            }
+        }
+    }
+}
