@@ -16,11 +16,17 @@ div{
         }
     }
 
-    > a, > img{
+    > a{
         width: calc(100% / 10);
-        height: auto;
+        aspect-ratio: 1 / 1;
 
         object-fit: cover;
+
+        &.pdf{
+            background-image: url(/icons/Icon_of_CV.svg);
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
 
         &.github{
             background-image: url(/icons/github.svg);
@@ -31,10 +37,14 @@ div{
             background-size: contain;
         }
 
-        &#pdf{
-            background-image: url(/icons/Icon_of_CV.svg);
+        &.email{
+            background-image: url(/icons/Icon_at_sign.svg);
             background-size: contain;
-            background-repeat: no-repeat;
+        }
+
+        &.phone{
+            background-image: url(/icons/Icon_of_phone.svg);
+            background-size: contain;
         }
     }
 
