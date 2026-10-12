@@ -116,13 +116,13 @@ h2 {
 
         border-radius: 5px;
         padding: 4px 2px;
-        background-color: #f3f8ffa0;
+        background-color: var(--color-secondary-transparent);
 
         transition: background-color 0.2s ease;
     }
 
     &.onTop > .element {
-        background-color: #f3f8ff;
+        background-color: var(--color-secondary);
     }
 
     > .word {

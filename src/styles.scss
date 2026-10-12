@@ -58,7 +58,7 @@ body{
     app-root{
         position: relative;
 
-        background-color: #f3f8ff;
+        background-color: var(--color-secondary);
     }
 }
 
@@ -75,9 +75,16 @@ body{
 }
 
 
+:root{
+	--color-primary: #6d6767;
+	--color-secondary: #f3f8ff;
+	--color-secondary-transparent: #f3f8ffa0;
+	--color-tertiary: #111111;
+}
+
 h1,h2,h3{
 	font-family: 'Poppins';
-	color: rgb(255, 249, 249);
+	color: var(--color-secondary);
 }
 
 h1{
