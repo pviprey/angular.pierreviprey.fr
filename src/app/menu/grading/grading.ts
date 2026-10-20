@@ -1,10 +1,11 @@
 import {AfterViewInit, Component, Input, OnDestroy, signal} from '@angular/core';
 import { KeyValuePipe } from '@angular/common';
 import { SkillWithCoordinates } from '../models/skill';
+import { RouterLink, RouterLinkActive } from '@angular/router';
 
 @Component({
   selector: 'app-grading',
-  imports: [KeyValuePipe],
+  imports: [KeyValuePipe, RouterLink, RouterLinkActive],
   templateUrl: './grading.html',
   styleUrl: './grading.scss',
 })

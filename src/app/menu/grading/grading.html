@@ -1,8 +1,13 @@
-<div #targetContainer class="target">
+<a
+  #targetContainer
+  class="target"
+  [routerLink]="['/', title]"
+  routerLinkActive="selected"
+>
   @for (item of svgsSignal() | keyvalue; track item.key) {
     <div
       class="container"
-      [class.best]="(item.value.grade >= 8)"
+      [class.best]="item.value.grade >= 8"
       [class.onTop]="item.value.active"
 
       [style.left.%]="50 + (item.value.x ?? 0)"
@@ -14,25 +19,18 @@
       [style.--float-duration]="item.value.floatDuration + 's'"
       [style.--float-delay]="item.value.floatDelay + 's'"
       [style.--shine-duration]="item.value.shineDuration + 's'"
-
     >
-    @if (item.value.type === 'word') {
-      <p
-        [class]="['element', item.value.type]"
-      >
-        {{ item.value.data }}
-    </p>
-      
-    }@else{
-      <img
-        [class]="['element', item.value.type]"
-
-        [src]="'/icons' + item.value.data"
-        [alt]="item.key"
-      >
-    }
+      @if (item.value.type === 'word') {
+        <p [class]="['element', item.value.type]">{{ item.value.data }}</p>
+      } @else {
+        <img
+          [class]="['element', item.value.type]"
+          [src]="'/icons' + item.value.data"
+          [alt]="item.key"
+        >
+      }
     </div>
   }
-</div>
+</a>
 
 <h2>{{ title }}</h2>

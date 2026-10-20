@@ -1,12 +1,11 @@
 import { Component, ChangeDetectionStrategy } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
 import { Grading } from './grading/grading';
 import { Contacts } from './contacts/contacts';
 import { Skill } from './models/skill';
 
 @Component({
   selector: 'app-menu',
-  imports: [RouterOutlet, Grading, Contacts],
+  imports: [Grading, Contacts],
   templateUrl: './menu.component.html',
   changeDetection: ChangeDetectionStrategy.Eager,
   styleUrl: './menu.component.scss'

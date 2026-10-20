@@ -1,11 +1,10 @@
 import { Component, ChangeDetectionStrategy } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { Menu } from './menu/menu.component';
-import { DescriptionComponent } from '../description/description.component';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, Menu, DescriptionComponent],
+  imports: [RouterOutlet, Menu],
   templateUrl: './app.component.html',
   changeDetection: ChangeDetectionStrategy.Eager,
   styleUrl: './app.component.scss'
