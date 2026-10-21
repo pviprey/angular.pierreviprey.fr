@@ -1,0 +1,66 @@
+<svg width="600" height="600" viewBox="0 0 600 600" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_83_1100)">
+<g clip-path="url(#clip1_83_1100)">
+<path d="M80 0H156L40 200H-36L80 0Z" fill="#ADADAD"/>
+<path d="M164 0H206L148 100H106L164 0Z" fill="#ADADAD"/>
+<path d="M214 0H256L198 100H156L214 0Z" fill="#ADADAD"/>
+<path d="M264 0H306L248 100H206L264 0Z" fill="#ADADAD"/>
+</g>
+<path d="M232 200H387L156 600H0L232 200Z" fill="#ADADAD"/>
+<path d="M422 500H464L406 600H364L422 500Z" fill="#ADADAD"/>
+<path d="M372 500H414L356 600H314L372 500Z" fill="#ADADAD"/>
+<path d="M322 500H364L306 600H264L322 500Z" fill="#ADADAD"/>
+<path d="M522 500H564L506 600H464L522 500Z" fill="#ADADAD"/>
+<path d="M472 500H514L456 600H414L472 500Z" fill="#ADADAD"/>
+<path d="M422 500H464L406 600H364L422 500Z" fill="#ADADAD"/>
+<path d="M630.033 400H672L614 500H572L630.033 400Z" fill="#ADADAD"/>
+<path d="M580 400H622L564 500H522L580 400Z" fill="#ADADAD"/>
+<path d="M530 400H572L514 500H472L530 400Z" fill="#ADADAD"/>
+<path d="M638 300H680L622 400H580L638 300Z" fill="#ADADAD"/>
+<path d="M588 300H630L572 400H530L588 300Z" fill="#ADADAD"/>
+<path d="M646 200H688L630 300H588L646 200Z" fill="#ADADAD"/>
+<path d="M622 100H664L606 200H564L622 100Z" fill="#ADADAD"/>
+<path d="M572.033 100H614L556 200H514L572.033 100Z" fill="#ADADAD"/>
+<path d="M522 100H564L506 200H464L522 100Z" fill="#ADADAD"/>
+<path d="M574 100H616L558 200H516L574 100Z" fill="#ADADAD"/>
+<path d="M524 100H566L508 200H466L524 100Z" fill="#ADADAD"/>
+<path d="M474 100H516L458 200H416L474 100Z" fill="#ADADAD"/>
+<g clip-path="url(#clip2_83_1100)">
+<path d="M-19.9669 400H22L-36 500H-78L-19.9669 400Z" fill="#ADADAD"/>
+<path d="M30 400H72L14 500H-28L30 400Z" fill="#ADADAD"/>
+</g>
+<g clip-path="url(#clip3_83_1100)">
+<path d="M-11.9669 300H30L-27.9441 400H-70L-11.9669 300Z" fill="#ADADAD"/>
+<path d="M38 300H80L22 400H-20L38 300Z" fill="#ADADAD"/>
+<path d="M88 300H130L72 400H30L88 300Z" fill="#ADADAD"/>
+</g>
+<g clip-path="url(#clip4_83_1100)">
+<path d="M46.0331 200H88L30.0559 300H-12L46.0331 200Z" fill="#ADADAD"/>
+<path d="M96.0331 200H138L80.0559 300H38L96.0331 200Z" fill="#ADADAD"/>
+<path d="M146 200H188L130 300H88L146 200Z" fill="#ADADAD"/>
+</g>
+<g clip-path="url(#clip5_83_1100)">
+<path d="M-26 100H16L-42 200H-84L-26 100Z" fill="#ADADAD"/>
+</g>
+</g>
+<defs>
+<clipPath id="clip0_83_1100">
+<rect width="600" height="600" fill="white"/>
+</clipPath>
+<clipPath id="clip1_83_1100">
+<rect width="306" height="200" fill="white"/>
+</clipPath>
+<clipPath id="clip2_83_1100">
+<rect width="72" height="100" fill="white" transform="translate(0 400)"/>
+</clipPath>
+<clipPath id="clip3_83_1100">
+<rect width="130" height="100" fill="white" transform="translate(0 300)"/>
+</clipPath>
+<clipPath id="clip4_83_1100">
+<rect width="188" height="100" fill="white" transform="translate(0 200)"/>
+</clipPath>
+<clipPath id="clip5_83_1100">
+<rect width="16" height="100" fill="white" transform="translate(0 100)"/>
+</clipPath>
+</defs>
+</svg>
