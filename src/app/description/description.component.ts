@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { inject, input, computed } from '@angular/core';
 import { InformationService } from '../../service/information.service';
+import { Information } from '../../models/information';
 
 @Component({
   selector: 'app-description',
@@ -11,7 +12,7 @@ import { InformationService } from '../../service/information.service';
 export class Description {
   private service = inject(InformationService);
 
-  id = input.required<string>();          // reçu depuis l'URL (:id)
-  // contenu = computed(() => this.service.get(this.id()));
+  information = input.required<Information>();
+
 
 }
