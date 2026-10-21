@@ -1,7 +1,7 @@
 import { Component, ChangeDetectionStrategy } from '@angular/core';
 import { Grading } from './grading/grading';
 import { Contacts } from './contacts/contacts';
-import { Skill } from './models/skill';
+import { Skill } from '../../models/skill';
 
 @Component({
   selector: 'app-menu',
